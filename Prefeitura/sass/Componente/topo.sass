@@ -1,0 +1,55 @@
+.informacoes-rapidas
+    background-color: #000
+    padding: 20px 0
+    .zoom
+        @extend .container-flexivel
+        grid-gap: $espacamento - 10
+        padding: 0
+        a
+            border-radius: 6px
+            background-color: gray
+            border-radius: 50px
+            padding: 5px
+            color: #fff
+            font-weight: bold
+            &:hover
+                @extend .efeito
+                
+    nav
+        @extend .container-flexivel
+        grid-gap: $espacamento / 2
+        flex-wrap: wrap
+        a   
+            padding: 7px 5px
+            color: #fff
+            &:hover
+                cursor: pointer
+                transition: .4s ease-in-out
+                border-radius: 5px
+                background-color: gray
+               
+.site-topo
+    &_redes
+        @extend .container-flexivel
+        flex-wrap: wrap
+        &-sociais
+            @extend .container-flexivel
+            grid-gap: $espacamento / 2
+            a
+                &:hover
+                    @extend .efeito
+    &_busca
+        display: flex
+        grid-gap: $espacamento / 2
+        input
+            padding: 8px
+            border-radius: 5px
+            border: solid 1px gray
+        button
+            border: none
+            background: #fff
+            &:hover
+                @extend .efeito
+
+
+
